@@ -5,7 +5,8 @@ class NavBar extends Component {
   links = [
     { lable: "Movies", to: "/movies" },
     { lable: "Rentals", to: "/rentals" },
-    { lable: "Customers", to: "/customers" }
+    { lable: "Customers", to: "/customers" },
+    { lable: "Login", to: "/login" }
   ];
   render() {
     return (
@@ -16,7 +17,7 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             {this.links.map(link => (
-              <li className="nav-item active">
+              <li key={link.lable} className="nav-item active">
                 <Link className="nav-link" to={link.to}>
                   {link.lable}
                 </Link>
