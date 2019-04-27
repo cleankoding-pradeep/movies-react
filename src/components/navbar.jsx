@@ -6,7 +6,8 @@ class NavBar extends Component {
     { lable: "Movies", to: "/movies" },
     { lable: "Rentals", to: "/rentals" },
     { lable: "Customers", to: "/customers" },
-    { lable: "Login", to: "/login" }
+    { lable: "Login", to: "/login" },
+    { lable: "Register", to: "/register" }
   ];
   render() {
     return (
